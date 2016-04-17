@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends Activity {
@@ -39,6 +40,7 @@ public class MainActivity extends Activity {
             @Override
             public void onAnimationEnd(Animator animation) {
                 mLoadingView.setVisibility(View.GONE);
+                Log.i("qqq","1111");
             }
         });
     }
