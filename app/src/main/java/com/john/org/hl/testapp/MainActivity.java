@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
         mContentView.setAlpha(0f);
         mContentView.setVisibility(View.VISIBLE);
 
-        // 内容视图以渐变的方式设置到完全可见，在mshortanimationduration 时间段里
+        // 内容视图以渐变的方式设置到完全可见，在 mshortanimationduration 时间段里
         mContentView.animate().alpha(1f).setDuration(mShortAnimationDuration).setListener(null);
 
         // 加载视图从可见到渐变到不可见，并监听动画结束设置visible
